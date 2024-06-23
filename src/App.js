@@ -1,7 +1,8 @@
 import logo from './logo.svg';
-import './App.css';
-import Modal from '@mui/material/Modal';
+
+// import Modal from '@mui/material/Modal';
 import {useState} from 'react';
+import Modal from "./Modal"
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -32,7 +33,7 @@ if(mark===false){
   
   return (
     <>
-    <div style={{display: 'flex', flexDirection: 'column', alignItems:'center'}}>
+    {/* <div style={{display: 'flex', flexDirection: 'column', alignItems:'center'}}>
       <div><h2>User Details Modal</h2></div>
       
      <div> <button onClick={handleOpen}>Open Form</button></div>
@@ -63,7 +64,8 @@ if(mark===false){
       </div>
       </div>
       </Modal>
-    </div>
+    </div> */}
+    <Modal/>
     </>
   );
 }
